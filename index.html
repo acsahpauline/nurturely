@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurturely</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SECTION 1: LANDING PAGE -->
+    <section id="landing">
+        <nav>
+            <div class="logo">nurturely<sup>™</sup></div>
+            <ul class="nav-links">
+                <li><a href="#about-section">about us</a></li>
+                <li><a href="#how-section">how it works</a></li>
+                <li><a href="#testimonials-section">testimonials</a></li>
+                <button class="btn-get-started" onclick="showSection('auth')">get started</button>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <div class="carousel">
+<div class="carousel-track" id="carouselTrack">
+    <div class="slide">
+        <img src="static/images/hero1.jpg" alt="Family together">
+        <div class="slide-overlay">
+            <h1>nurturely<sup>™</sup></h1>
+            <p>notice the signs before they become scars</p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="static/images/hero2.jpg" alt="Parent and child">
+        <div class="slide-overlay">
+            <h1>did you know?</h1>
+            <p>1 in 3 teens develop body image issues between ages 10–14.<br>Most parents miss the early signs.</p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="static/images/hero3.jpg" alt="Teen and parent">
+        <div class="slide-overlay">
+            <h1>catch it early.</h1>
+            <p>Spot behavioral changes, understand patterns,<br>and show up for your child — before it's too late.</p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="static/images/hero4.jpg" alt="Teen smiling">
+        <div class="slide-overlay">
+            <h1>you are not alone.</h1>
+            <p>Thousands of parents are navigating this.<br>Nurturely guides you every step of the way.</p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="static/images/hero5.jpg" alt="Happy family">
+        <div class="slide-overlay">
+            <h1>start today.</h1>
+            <p>Early awareness is the greatest gift<br>you can give your child.</p>
+            <button class="btn-slide" onclick="showSection('auth')">get started →</button>
+        </div>
+    </div>
+</div>
+                <button class="carousel-btn left" onclick="moveCarousel(-1)">&#9664;</button>
+                <button class="carousel-btn right" onclick="moveCarousel(1)">&#9654;</button>
+            </div>
+        </div>
+
+<!-- MARQUEE TICKER -->
+<div class="marquee-wrapper">
+    <div class="marquee-track">
+        <span>early detection</span><span class="dot">·</span>
+        <span>sensitive guidance</span><span class="dot">·</span>
+        <span>no diagnosis</span><span class="dot">·</span>
+        <span>parent first</span><span class="dot">·</span>
+        <span>built with care</span><span class="dot">·</span>
+        <span>body image awareness</span><span class="dot">·</span>
+        <span>nurturely™</span><span class="dot">·</span>
+        <span>early detection</span><span class="dot">·</span>
+        <span>sensitive guidance</span><span class="dot">·</span>
+        <span>no diagnosis</span><span class="dot">·</span>
+        <span>parent first</span><span class="dot">·</span>
+        <span>built with care</span><span class="dot">·</span>
+        <span>body image awareness</span><span class="dot">·</span>
+        <span>nurturely™</span><span class="dot">·</span>
+    </div>
+</div>
+
+<!-- EARLY WARNING SIGNS -->
+<div class="section-block" id="warning-section">
+    <h2 class="section-title">early warning signs.</h2>
+    <p class="section-subtitle">the subtle shifts most parents miss.</p>
+    <div class="warning-grid">
+        <div class="warning-card">
+            <div class="warning-icon" style="background-color: var(--pink);">1</div>
+            <h3>food avoidance</h3>
+            <p>Refusing foods they once loved, skipping meals, or suddenly "watching what they eat" without any medical reason.</p>
+        </div>
+        <div class="warning-card">
+            <div class="warning-icon" style="background-color: var(--yellow);">2</div>
+            <h3>excessive mirror time</h3>
+            <p>Spending unusually long periods in front of mirrors, pinching skin, or making negative comments about their body.</p>
+        </div>
+        <div class="warning-card">
+            <div class="warning-icon" style="background-color: var(--lavender);">3</div>
+            <h3>hoarding beauty products</h3>
+            <p>Secretly collecting makeup, skincare, or appearance-altering products beyond age-appropriate curiosity.</p>
+        </div>
+        <div class="warning-card">
+            <div class="warning-icon" style="background-color: var(--green);">4</div>
+            <h3>social withdrawal</h3>
+            <p>Avoiding social situations, especially those involving food, swimwear, or physical activity with peers.</p>
+        </div>
+        <div class="warning-card">
+            <div class="warning-icon" style="background-color: var(--blue);">5</div>
+            <h3>toxic content consumption</h3>
+            <p>Obsessively following influencers or accounts centered around extreme body standards, diets, or looksmaxxing.</p>
+        </div>
+        <div class="warning-card">
+            <div class="warning-icon" style="background-color: var(--coral);">6</div>
+            <h3>negative self talk</h3>
+            <p>Frequently saying "I'm fat", "I'm ugly", or comparing themselves to unrealistic standards — even as a joke.</p>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 3rem;">
+        <p style="color: var(--text-mid); margin-bottom: 1rem;">recognise any of these in your child?</p>
+        <button class="btn-primary" style="width: auto; padding: 0.8rem 2.5rem;" onclick="showSection('auth')">start monitoring with nurturely →</button>
+    </div>
+</div>
+
+        <!-- HOW IT WORKS -->
+        <div class="section-block" id="how-section">
+            <h2 class="section-title">how it works.</h2>
+            <p class="section-subtitle">three simple steps to understanding your child better.</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>observe</h3>
+                    <p>Log behavioral changes you notice in your child — food habits, mirror time, new products.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>talk to ai</h3>
+                    <p>Our AI guides you through a sensitive conversation to understand the context and patterns.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>understand</h3>
+                    <p>Get gentle, actionable guidance on how to approach your child without breaking their trust.</p>
+                </div>
+            </div>
+        </div>
+
+ <!-- ABOUT -->
+<div class="section-block about-block" id="about-section">
+    <div class="about-text">
+        <h2 class="section-title">about nurturely.</h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.6);">built with intention. designed with care.</p>
+        <p class="about-mission">we built nurturely because the most dangerous moment in a child's life often <span style="background-color:var(--pink); color:var(--text-dark); padding:0 0.3rem; border-radius:4px;">looks like nothing at all.</span></p>
+        <div class="about-grid">
+            <div class="about-item">
+                <h3>our mission</h3>
+                <p>To help parents become the first line of defense against body image issues in children aged 10-14, by giving them the awareness, tools, and guidance to act early and act right.</p>
+            </div>
+            <div class="about-item">
+                <h3>why it matters</h3>
+                <p>Body image issues rarely announce themselves. They hide in skipped meals, long mirror sessions, and jokes about being "too fat." By the time most parents notice, the pattern is already deep.</p>
+            </div>
+            <div class="about-item">
+                <h3>our approach</h3>
+                <p>We don't surveil. We don't diagnose. We guide parents to show up with sensitivity, not suspicion, so their child feels safe enough to open up when it matters most.</p>
+            </div>
+            <div class="about-item">
+                <h3>our belief</h3>
+                <p>The best intervention is not a therapist or a warning label. It is a parent who knows how to listen, when to speak, and how to make their child feel seen.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="section-block" id="testimonials-section">
+    <h2 class="section-title">what parents say.</h2>
+    <p class="section-subtitle">real families. real conversations. real change.</p>
+    <div class="testimonial-carousel">
+        <div class="testimonial-track" id="testimonialTrack">
+
+            <div class="testimonial-slide">
+                <div class="testimonial-card big">
+                    <div class="quote-mark">"</div>
+                    <p>I noticed my daughter had stopped eating her favourite foods and was spending hours looking at herself in the mirror. I thought it was just a teenage phase. Nurturely helped me realise it wasn't — and more importantly, it told me exactly how to talk to her without making her shut down. That conversation changed everything.</p>
+                    <div class="parent-info">
+                        <img src="static/images/parent1.jpg" class="parent-pic" alt="Parent">
+                        <span>— Meera R., mother of a 13-year-old, Chennai</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="testimonial-card big">
+                    <div class="quote-mark">"</div>
+                    <p>I found hidden makeup in my 11-year-old's bag. I didn't know if I should be worried or just let it go. Nurturely guided me through it and helped me realise this was worth paying attention to. I'm so glad I didn't dismiss it.</p>
+                    <div class="parent-info">
+                        <img src="static/images/parent2.jpg" class="parent-pic" alt="Parent">
+                        <span>— James T., father of an 11-year-old, London</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="testimonial-card big">
+                    <div class="quote-mark">"</div>
+                    <p>My son started making jokes about being "too fat" and I laughed it off the first few times. After logging it on Nurturely, the AI flagged it as a pattern across 3 weeks. I had no idea. The guidance helped me approach him in a way that didn't embarrass him — and he actually opened up.</p>
+                    <div class="parent-info">
+                        <img src="static/images/parent3.jpg" class="parent-pic" alt="Parent">
+                        <span>— Priya K., mother of a 14-year-old, Mumbai</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="testimonial-card big">
+                    <div class="quote-mark">"</div>
+                    <p>As a single dad I had no idea what signs to look for. This app made me feel like I actually knew what I was doing. The AI never made me feel judged — it just helped me show up better for my daughter.</p>
+                    <div class="parent-info">
+                        <img src="static/images/parent4.jpg" class="parent-pic" alt="Parent">
+                        <span>— Daniel M., father of a 12-year-old, New York</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="testimonial-card big">
+                    <div class="quote-mark">"</div>
+                    <p>My daughter follows a lot of influencers and I always worried about the kind of content she was consuming. When she started skipping meals and saying she wanted a "smaller waist", I panicked. Nurturely didn't just tell me there was a problem — it helped me understand WHY she felt that way and how to have a real conversation about it.</p>
+                    <div class="parent-info">
+                        <img src="static/images/parent5.jpg" class="parent-pic" alt="Parent">
+                        <span>— Sarah O., mother of a 13-year-old, Lagos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="testimonial-card big">
+                    <div class="quote-mark">"</div>
+                    <p>I wish I had this three years ago. We caught the signs late with my older daughter. With my younger one, Nurturely helped us catch it early. The difference in outcome has been night and day.</p>
+                    <div class="parent-info">
+                        <img src="static/images/parent6.jpg" class="parent-pic" alt="Parent">
+                        <span>— Fatima A., mother of two, Dubai</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testimonial-controls">
+            <button class="carousel-btn-t left" onclick="moveTestimonial(-1)">&#9664;</button>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+            <button class="carousel-btn-t right" onclick="moveTestimonial(1)">&#9654;</button>
+        </div>
+    </div>
+</div>
+
+        <footer>
+            <p>nurturely™ — built with care for every family</p>
+        </footer>
+    </section>
+
+<!-- SECTION: AUTH -->
+<section id="auth" style="display:none;">
+    <div class="onboarding-wrapper">
+        <div class="onboarding-left">
+            <div class="logo" onclick="showSection('landing')" style="cursor:pointer;">nurturely<sup>™</sup></div>
+            <div class="onboarding-tagline">
+                <h2>your child's wellbeing starts with your awareness.</h2>
+                <p>Join thousands of parents who are learning to notice the signs early and show up for their children with confidence.</p>
+                <div class="onboarding-pills">
+                    <span class="pill green">early detection</span>
+                    <span class="pill blue">sensitive guidance</span>
+                    <span class="pill pink">no diagnosis</span>
+                    <span class="pill yellow">parent first</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="onboarding-right">
+            <!-- TAB SWITCHER -->
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="registerTab" onclick="switchTab('register')">register</button>
+                <button class="auth-tab" id="loginTab" onclick="switchTab('login')">login</button>
+            </div>
+
+            <!-- REGISTER FORM -->
+            <div id="registerForm">
+                <h2>create your account</h2>
+                <p class="form-subtitle">Start your journey to understanding your child better.</p>
+
+                <div class="form-group">
+                    <label>your name</label>
+                    <input type="text" id="regName" placeholder="e.g. Sarah">
+                </div>
+                <div class="form-group">
+                    <label>email address</label>
+                    <input type="email" id="regEmail" placeholder="e.g. sarah@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label>password</label>
+                    <input type="password" id="regPassword" placeholder="at least 6 characters">
+                </div>
+                <div class="form-group">
+                    <label>confirm password</label>
+                    <input type="password" id="regConfirm" placeholder="repeat your password">
+                </div>
+
+                <p class="privacy-note">your information is private and never shared</p>
+                <button class="btn-primary" onclick="handleRegister()">create account →</button>
+                <p class="auth-switch">already have an account? <a onclick="switchTab('login')">login here</a></p>
+            </div>
+
+            <!-- LOGIN FORM -->
+            <div id="loginForm" style="display:none;">
+                <h2>welcome back</h2>
+                <p class="form-subtitle">Log in to continue monitoring your child's wellbeing.</p>
+
+                <div class="form-group">
+                    <label>email address</label>
+                    <input type="email" id="loginEmail" placeholder="e.g. sarah@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label>password</label>
+                    <input type="password" id="loginPassword" placeholder="your password">
+                </div>
+
+                <p class="privacy-note">your information is private and never shared</p>
+                <button class="btn-primary" onclick="handleLogin()">login →</button>
+                <p class="auth-switch">don't have an account? <a onclick="switchTab('register')">register here</a></p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2: ONBOARDING -->
+<section id="onboarding" style="display:none;">
+    <div class="onboarding-wrapper">
+        <div class="onboarding-left">
+            <div class="logo" onclick="showSection('landing')" style="cursor:pointer;">nurturely<sup>™</sup></div>
+            <div class="onboarding-tagline">
+                <h2>the first step is simply paying attention.</h2>
+                <p>Most parents sense something is off before they can name it. Nurturely helps you name it, understand it, and act on it — gently.</p>
+                <div class="onboarding-pills">
+                    <span class="pill green">early detection</span>
+                    <span class="pill blue">sensitive guidance</span>
+                    <span class="pill pink">no diagnosis</span>
+                    <span class="pill yellow">parent first</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="onboarding-right">
+            <div class="progress-bar">
+                <div class="progress-step active">1</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">2</div>
+            </div>
+
+            <h2>let's get to know your child</h2>
+            <p class="form-subtitle">This helps Nurturely understand your child's baseline so we can detect changes better.</p>
+
+            <div class="form-group">
+                <label>your child's name</label>
+                <input type="text" id="childName" placeholder="e.g. Aanya">
+            </div>
+            <div class="form-group">
+                <label>your child's age</label>
+                <input type="number" id="childAge" placeholder="e.g. 12" min="8" max="20">
+            </div>
+            <div class="form-group">
+                <label>how would you describe your child's personality?</label>
+                <textarea id="childPersonality" placeholder="e.g. She's usually bubbly, loves art, social with friends..."></textarea>
+            </div>
+            <div class="form-group">
+                <label>what are some things your child used to love?</label>
+                <textarea id="childLoves" placeholder="e.g. She loved eating chocolate cake, playing outside, watching anime..."></textarea>
+            </div>
+
+            <p class="privacy-note">your information is private and never shared</p>
+            <button class="btn-primary" onclick="validateOnboarding()">continue →</button>
+            <button class="btn-secondary" onclick="showSection('landing')">← back to home</button>
+        </div>
+    </div>
+</section>
+
+    <!-- SECTION 3: DASHBOARD -->
+    <section id="dashboard" style="display:none;">
+        <nav class="app-nav">
+    <div class="logo">nurturely<sup>™</sup></div>
+    <ul class="nav-links">
+        <li><a href="#" onclick="showSection('dashboard')">dashboard</a></li>
+        <li><a href="#" onclick="showSection('chat')">ai chat</a></li>
+        <button class="btn-get-started" onclick="showSection('log')">+ log incident</button>
+        <div class="profile-avatar-wrap">
+            <div class="profile-avatar" id="navAvatar" onclick="toggleProfileMenu()">
+                <img id="navAvatarImg" src="" alt="" style="display:none; width:100%; height:100%; border-radius:50%; object-fit:cover;">
+                <span id="navAvatarInitial"></span>
+            </div>
+            <div class="profile-menu" id="profileMenu" style="display:none;">
+                <div class="profile-menu-header">
+                    <div class="profile-menu-avatar">
+                        <img id="menuAvatarImg" src="" alt="" style="display:none; width:100%; height:100%; border-radius:50%; object-fit:cover;">
+                        <span id="menuAvatarInitial"></span>
+                    </div>
+                    <div>
+                        <p id="menuName" style="font-weight:500; font-size:0.95rem;"></p>
+                        <p id="menuEmail" style="font-size:0.8rem; color:var(--text-mid);"></p>
+                    </div>
+                </div>
+                <div class="profile-menu-divider"></div>
+                <button class="profile-menu-item" onclick="openViewProfile()">view profile</button>
+                <button class="profile-menu-item" onclick="openEditProfile()">edit profile</button>
+                <div class="profile-menu-divider"></div>
+                <button class="profile-menu-item" onclick="openSupport()">support & feedback</button>
+                <div class="profile-menu-divider"></div>
+                <button class="profile-menu-item danger" onclick="handleSignOut()">sign out</button>
+            </div>
+        </div>
+    </ul>
+</nav>
+
+        <div class="dashboard-container">
+    <h2>welcome back, <span id="dashboardName"></span>!</h2>
+    <p class="form-subtitle">every observation brings you closer to understanding your child.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card green">
+                    <span class="stat-number" id="totalLogs">0</span>
+                    <span class="stat-label">total logs</span>
+                </div>
+                <div class="stat-card yellow">
+                    <span class="stat-number" id="thisWeek">0</span>
+                    <span class="stat-label">this week</span>
+                </div>
+                <div class="stat-card pink">
+                    <span class="stat-number" id="alertCount">0</span>
+                    <span class="stat-label">patterns flagged</span>
+                </div>
+            </div>
+
+<div class="logs-section">
+                <h3>recent observations</h3>
+                <div id="logsList">
+                    <div class="empty-state">
+                           <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">no observations yet</p>
+                           <p>when you notice something — a skipped meal, extra mirror time, a new product — log it here. small signs matter.</p>
+                           <button class="btn-primary" style="width: auto; padding: 0.7rem 2rem; margin-top: 1.5rem;" onclick="showSection('log')">+ log your first observation</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tips-section">
+                <h3>things to watch for this week</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <span class="tip-icon" style="background-color: var(--pink);">1</span>
+                        <p>did your child eat normally at every meal?</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-icon" style="background-color: var(--yellow);">2</span>
+                        <p>did they spend unusual time in front of the mirror?</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-icon" style="background-color: var(--lavender);">3</span>
+                        <p>did they make any negative comments about their body?</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-icon" style="background-color: var(--green);">4</span>
+                        <p>did they seem comfortable in social situations?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONNECT SECTION -->
+            <div class="connect-section" id="connectSection" style="display:none;">
+                <h3>parents like you!</h3>
+                <p class="form-subtitle">Based on your observations, these parents are navigating similar concerns. You are not alone.</p>
+                <div class="connect-grid" id="connectGrid"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: LOG INCIDENT -->
+    <section id="log" style="display:none;">
+        <nav class="app-nav">
+    <div class="logo">nurturely<sup>™</sup></div>
+    <ul class="nav-links">
+        <li><a href="#" onclick="showSection('dashboard')">dashboard</a></li>
+        <li><a href="#" onclick="showSection('chat')">ai chat</a></li>
+        <div class="profile-avatar-wrap">
+            <div class="profile-avatar" onclick="toggleProfileMenu()">
+                <img id="logAvatarImg" src="" alt="" style="display:none; width:100%; height:100%; border-radius:50%; object-fit:cover;">
+                <span id="logAvatarInitial"></span>
+            </div>
+            <div class="profile-menu" id="profileMenuLog" style="display:none;">
+                <div class="profile-menu-header">
+                    <div class="profile-menu-avatar">
+                        <span id="logMenuInitial"></span>
+                    </div>
+                    <div>
+                        <p id="logMenuName" style="font-weight:500; font-size:0.95rem;"></p>
+                    </div>
+                </div>
+                <div class="profile-menu-divider"></div>
+                <button class="profile-menu-item" onclick="openViewProfile()">view profile</button>
+                <button class="profile-menu-item" onclick="openEditProfile()">edit profile</button>
+                <div class="profile-menu-divider"></div>
+                <button class="profile-menu-item" onclick="openSupport()">support & feedback</button>
+                <div class="profile-menu-divider"></div>
+                <button class="profile-menu-item danger" onclick="handleSignOut()">sign out</button>
+            </div>
+        </div>
+    </ul>
+</nav>
+
+        <div class="form-container">
+            <h2>log an observation</h2>
+            <p class="form-subtitle">Describe something you noticed. Be as specific as possible.</p>
+
+            <div class="form-group">
+                <label>what did you notice?</label>
+                <textarea id="incidentText" placeholder="e.g. She refused her favourite chocolate cake at the birthday party and said she was 'watching what she eats'..."></textarea>
+            </div>
+            <div class="form-group">
+                <label>when did this happen?</label>
+                <input type="date" id="incidentDate">
+            </div>
+            <div class="form-group">
+                <label>category</label>
+                <select id="incidentCategory">
+                    <option value="food">food & eating habits</option>
+                    <option value="appearance">appearance & mirror time</option>
+                    <option value="products">beauty & makeup products</option>
+                    <option value="social">social withdrawal</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+
+            <button class="btn-primary" onclick="saveLog()">save observation →</button>
+            <button class="btn-secondary" onclick="showSection('dashboard')">cancel</button>
+        </div>
+    </section>
+
+    <!-- SECTION 5: AI CHAT -->
+    <section id="chat" style="display:none;">
+        <nav class="app-nav">
+    <div class="logo">nurturely<sup>™</sup></div>
+    <ul class="nav-links">
+        <li><a href="#" onclick="showSection('dashboard')">dashboard</a></li>
+        <li><a href="#" onclick="showSection('log')">+ log incident</a></li>
+        <div class="profile-avatar-wrap">
+            <div class="profile-avatar" onclick="toggleProfileMenu()">
+                <img id="chatAvatarImg" src="" alt="" style="display:none; width:100%; height:100%; border-radius:50%; object-fit:cover;">
+                <span id="chatAvatarInitial"></span>
+            </div>
+            <div class="profile-menu" id="profileMenuChat" style="display:none;">
+                <div class="profile-menu-header">
+                    <div class="profile-menu-avatar">
+                        <span id="chatMenuInitial"></span>
+                    </div>
+                    <div>
+                        <p id="chatMenuName" style="font-weight:500; font-size:0.95rem;"></p>
+                    </div>
+                </div>
+                <div class="profile-menu-divider"></div>
+                <button class="profile-menu-item" onclick="openViewProfile()">view profile</button>
+                <button class="profile-menu-item" onclick="openEditProfile()">edit profile</button>
+                <div class="profile-menu-divider"></div>
+                <button class="profile-menu-item" onclick="openSupport()">support & feedback</button>
+                <div class="profile-menu-divider"></div>
+                <button class="profile-menu-item danger" onclick="handleSignOut()">sign out</button>
+            </div>
+        </div>
+    </ul>
+</nav>
+
+        <div class="chat-container">
+            <h2>talk to nurturely ai</h2>
+            <p class="form-subtitle">Share what's on your mind. Our AI will guide you sensitively.</p>
+
+            <div class="chat-box" id="chatBox">
+                <div class="chat-message ai">
+                    <p>Hello! I'm here to help you understand what your child might be going through. You can share an observation, ask me what a behaviour might mean, or tell me how you're feeling as a parent. I'm listening.</p>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="type your message..." onkeypress="handleEnter(event)">
+                <button class="btn-send" onclick="sendMessage()">send</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIEW PROFILE MODAL -->
+<div id="viewProfileModal" class="modal-overlay" style="display:none;" onclick="closeModal('viewProfileModal')">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal('viewProfileModal')">✕</button>
+        <div class="modal-profile-pic">
+            <img id="viewPicImg" src="" alt="" style="display:none; width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            <span id="viewPicInitial" style="font-size:2rem;"></span>
+        </div>
+        <h2 id="viewProfileName" style="text-align:center; font-family:var(--serif); font-weight:400; margin: 1rem 0 0.3rem;"></h2>
+        <p id="viewProfileEmail" style="text-align:center; color:var(--text-mid); font-size:0.9rem;"></p>
+        <p id="viewProfileBio" style="text-align:center; color:var(--text-mid); font-size:0.9rem; margin-top:1rem; font-style:italic;"></p>
+        <div class="modal-stats">
+            <div class="modal-stat">
+                <span id="viewTotalLogs" style="font-family:var(--serif); font-size:1.8rem; font-weight:700;">0</span>
+                <span style="font-size:0.8rem; color:var(--text-mid);">total logs</span>
+            </div>
+            <div class="modal-stat">
+                <span id="viewChildName" style="font-family:var(--serif); font-size:1.1rem; font-weight:500;"></span>
+                <span style="font-size:0.8rem; color:var(--text-mid);">child's name</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- EDIT PROFILE MODAL -->
+<div id="editProfileModal" class="modal-overlay" style="display:none;" onclick="closeModal('editProfileModal')">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal('editProfileModal')">✕</button>
+        <h2 style="font-family:var(--serif); font-weight:400; margin-bottom:1.5rem;">edit profile</h2>
+
+        <div class="edit-pic-wrap">
+            <div class="modal-profile-pic" id="editPicPreview">
+                <img id="editPicImg" src="" alt="" style="display:none; width:100%; height:100%; border-radius:50%; object-fit:cover;">
+                <span id="editPicInitial" style="font-size:2rem;"></span>
+            </div>
+            <label class="edit-pic-btn" for="profilePicInput">change photo</label>
+            <input type="file" id="profilePicInput" accept="image/*" style="display:none;" onchange="previewPic(event)">
+        </div>
+
+        <div class="form-group">
+            <label>your name</label>
+            <input type="text" id="editName" placeholder="your name">
+        </div>
+        <div class="form-group">
+            <label>bio <span style="color:var(--text-light); font-size:0.8rem;">(optional)</span></label>
+            <textarea id="editBio" placeholder="e.g. Mother of two, trying my best every day..." style="height:80px;"></textarea>
+        </div>
+
+        <button class="btn-primary" onclick="saveProfile()">save changes →</button>
+    </div>
+</div>
+
+<!-- CONNECT MODAL -->
+<div id="connectModal" class="modal-overlay" style="display:none;" onclick="closeModal('connectModal')">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal('connectModal')">✕</button>
+        <div class="connect-modal-header">
+            <div class="modal-profile-pic" id="connectPic" style="width:60px; height:60px;">
+                <span id="connectInitial" style="font-size:1.5rem;"></span>
+            </div>
+            <div>
+                <h3 id="connectName" style="font-family:var(--serif); font-weight:400;"></h3>
+                <p id="connectLocation" style="font-size:0.85rem; color:var(--text-mid);"></p>
+            </div>
+        </div>
+        <div class="connect-modal-concern">
+            <span id="connectConcern"></span>
+        </div>
+        <p id="connectBio" style="font-size:0.95rem; color:var(--text-mid); line-height:1.8; margin: 1rem 0;"></p>
+        <button class="btn-primary" onclick="sendConnectRequest()">send connection request →</button>
+        <p id="connectConfirm" style="display:none; text-align:center; color:#3a7d44; font-size:0.9rem; margin-top:1rem;">connection request sent! they'll be notified.</p>
+    </div>
+</div>
+
+<!-- SUPPORT MODAL -->
+<div id="supportModal" class="modal-overlay" style="display:none;" onclick="closeModal('supportModal')">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal('supportModal')">✕</button>
+        <h2 style="font-family:var(--serif); font-weight:400; margin-bottom:0.3rem;">we're listening!</h2>
+        <p class="form-subtitle">Share a complaint, suggestion, or leave us a testimonial.</p>
+
+        <!-- TYPE SELECTOR -->
+        <div class="support-types">
+            <button class="support-type active" id="typeComplaint" onclick="selectType('complaint')">complaint</button>
+            <button class="support-type" id="typeSuggestion" onclick="selectType('suggestion')">suggestion</button>
+            <button class="support-type" id="typeTestimonial" onclick="selectType('testimonial')">testimonial</button>
+        </div>
+
+        <!-- RATING (only for testimonial) -->
+        <div id="ratingSection" style="display:none; margin-bottom:1.5rem;">
+            <label style="font-size:0.9rem; font-weight:500; display:block; margin-bottom:0.5rem;">your rating</label>
+            <div class="star-rating" id="starRating">
+                <span class="star" onclick="setRating(1)">★</span>
+                <span class="star" onclick="setRating(2)">★</span>
+                <span class="star" onclick="setRating(3)">★</span>
+                <span class="star" onclick="setRating(4)">★</span>
+                <span class="star" onclick="setRating(5)">★</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label id="messageLabel">describe your complaint</label>
+            <textarea id="supportMessage" placeholder="tell us what happened..." style="height:120px;"></textarea>
+        </div>
+
+        <button class="btn-primary" onclick="submitSupport()">submit →</button>
+
+        <!-- SUCCESS STATE -->
+        <div id="supportSuccess" style="display:none; text-align:center; padding:1rem 0;">
+            <p style="color:var(--text-mid); font-size:0.9rem;" id="supportSuccessMsg"></p>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
